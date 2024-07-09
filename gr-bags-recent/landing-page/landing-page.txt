@@ -1,0 +1,17 @@
+1. make top menubar hight to 80px on landing page, for this use logo-80
+2. on scroll after below landing page, make top menubar hight to 60px, use logo-60
+3. landing page background color: DEDEDE
+
+landing page title1: The Perfect Bag  Covering Your Needs
+landing page title2: Your trusted Packaging Partner
+landing page title2: Protect your Goods with us!
+
+Menu: Home, Products, About Us, Contact Us - is enough
+
+dont remove testimonial section which is above of contact us information.
+
+
+
+Personalize your bags with a variety of color options available.
+
+Get bags tailored to your specific size requirements for perfect fit.
