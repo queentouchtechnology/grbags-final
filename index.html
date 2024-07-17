@@ -239,6 +239,71 @@
 
       </style>
 
+<style>
+  #siteNav1 {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0; /* Top margin added */
+      display: flex;
+      justify-content: center;
+      background-color: #fff; /* Background color of the nav */
+      font-family: 'Arial', sans-serif; /* Change the font family for a more stylish look */
+    
+  }
+
+  #siteNav1 li {
+      margin: 0 15px;
+      position: relative;
+  }
+
+  #siteNav1 a {
+    text-transform: none; /* No capitalization */
+        text-decoration: none;
+        color: #333; /* Default text color */
+        padding: 15px 20px; /* Increased padding for larger clickable area */
+        display: block;
+        transition: color 0.3s, background-color 0.3s, transform 0.3s; /* Smooth transition */
+        font-size: 18px; /* Larger font size */
+        font-weight: bold; /* Bold font style */
+      
+  }
+
+  #siteNav1 a:hover {
+    color: #fff; /* Text color on hover */
+        background-color: #09a2a0; /* Background color on hover */
+        transform: scale(1.1); /* Slightly increase size on hover */
+        border-radius: 5px; /* Rounded corners on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+  }
+
+  #siteNav1 li.dropdown:hover ul,
+  #siteNav1 li.megamenu:hover ul {
+      display: block; /* Show dropdown on hover */
+  }
+
+  #siteNav1 ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for dropdown */
+      border-radius: 5px; /* Rounded corners for dropdown */
+  }
+
+  #siteNav1 ul li {
+      margin: 0;
+  }
+
+  #siteNav1 ul a {
+      padding: 10px 20px;
+      width: 200px; /* Set width for dropdown items */
+  }
+</style>
+
     <meta property="og:url" content="https://www.grbags.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="GR BAGS - Manufacturer of Commercial and Industrial Polybags">
@@ -255,39 +320,50 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+        <style>
+          .header {
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+              transition: box-shadow 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+          }
+      
+          .header:hover {
+              box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), /* Stronger bottom shadow on hover */
+                          0 0 15px rgba(9, 162, 160, 0.5); /* Bottom glow effect on hover */
+              border-bottom-color: #09a2a0; /* Change border color on hover to match the glow */
+          }
+      </style>
     </head>
 
     <body class="template-index index-demo1">
         <!--Page Wrapper-->
         <div class="page-wrapper">
           
-            <header class="header d-flex align-items-center header-1 header-fixed">
+            <header style=" border-bottom: solid 1px #d8d6d6;" class="header d-flex align-items-center header-1 header-fixed">
                 <div class="container">        
                     <div class="row">
                         <!--Logo-->
-                        <div class="logo col-5 col-sm-3 col-md-3 col-lg-2 align-self-center">
-                            <a class="logoImg" href="index.html">
-                                <img src="grbags-files/images/GR BAGS logo.png" width="90" height="100" alt="Hema Multipurpose Html Template" title="Hema Multipurpose Html Template" width="149" height="39" /></a>
+                        <div class="logo1 col-5 col-sm-3 col-md-3 col-lg-2 align-self-center">
+                            <a class="logoImg1 p-2" href="index.html">
+                                <img src="grbags-files/images/GR BAGS logo.png" width="190" height="100" alt="Hema Multipurpose Html Template" title="Hema Multipurpose Html Template" width="149" height="39" /></a>
                         </div>
                         <!--End Logo-->
                         <!--Menu-->
                         <div style=" margin-left: auto;" class="col-1 col-sm-1 col-md-1 col-lg-8 d-menu-col">
                             <nav class="navigation" id="AccessibleNav">
-                                <ul id="siteNav" class="site-nav medium center">
-                                    <li class="lvl1 parent dropdown"><a href="#">Home</i></a>
+                                <ul id="siteNav1" class="site-nav medium center">
+                                    <li  class="lvl1 parent dropdown"><a style=" text-transform: none; " href="#">Home</i></a>
                                         
                                     </li>
-                                    <li class="lvl1 parent megamenu"><a href="#about-section">About us</a></li>
+                                    <li class="lvl1 parent megamenu"><a style=" text-transform: none; " href="#about-section">About us</a></li>
                                         
                                     </li>
-                                    <li class="lvl1 parent megamenu"><a href="#about-section1">Products</a>
+                                    <li class="lvl1 parent megamenu"><a style=" text-transform: none; " href="#about-section1">Products</a>
                                         
                                     </li>
-                                    <li class="lvl1 parent dropdown"><a href="#about-section2">Testimonials</a>
+                                    <li class="lvl1 parent dropdown"><a style=" text-transform: none; " href="#about-section2">Testimonials</a>
                                       
                                     </li>
-                                    <li class="lvl1 parent dropdown"><a href="#about-section3">Contact</a>
+                                    <li class="lvl1 parent dropdown"><a style=" text-transform: none; " href="#about-section3">Contact</a>
                                        
                                     </li>
                                 </ul>
@@ -446,7 +522,9 @@
                             </div>
                         </div>
                     </div>
-                </div></section> <!-- Destination section -->
+                </div>
+              </section> 
+                <!-- Destination section -->
 
 
                 <div class="destination-section section pt-0" style="display: none;">
@@ -540,9 +618,9 @@
 
                          <div class="col-lg-3">
                                 <div class="image-container">
-                                  <img src="assets/images/images/carry-bags/01.png" alt="Category 1 Image 1">
+                                  <img src="assets/images/images/carry-bags/09.png" alt="Category 1 Image 1">
                                   <div class="overlay">
-                                    <div>Grb gusseted carry bag</div>
+                                    <div>Unlaminated Carry Bag</div>
                                   </div>
                                 </div>
                          </div>
@@ -550,24 +628,25 @@
                             <div class="image-container">
                               <img src="assets/images/images/carry-bags/02.png" alt="Category 1 Image 1">
                               <div class="overlay">
-                                <div>Grb laminated bag</div>
+                                <div>Laminated Carry Bag</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/carry-bags/03.png" height="300" alt="Category 1 Image 2">
+                              <img src="assets/images/images/carry-bags/01.png" height="300" alt="Category 1 Image 2">
                               <div class="overlay">
-                                <div>Grb printed carry bag</div>
+                                <div>Gusseted Carry Bag
+                                  </div>
                               </div>
                             </div>
                           </div>
 
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/carry-bags/04.png" alt="Category 1 Image 2">
+                              <img src="assets/images/images/carry-bags/03.png" alt="Category 1 Image 2">
                               <div class="overlay">
-                                <div>Grb printed carry bag</div>
+                                <div>Printed Punched-Hole Carry Bag</div>
                               </div>
                             </div>
                           </div>
@@ -581,15 +660,17 @@
                                    <div class="image-container">
                                      <img src="assets/images/images/carry-bags/05.png" alt="Category 1 Image 1">
                                      <div class="overlay">
-                                       <div>Grb punched handle carry bag</div>
+                                       <div>Punched Handle Carry Bag
+                                        </div>
                                      </div>
                                    </div>
                             </div>
                              <div class="col-lg-3">
                                <div class="image-container">
-                                 <img src="assets/images/images/carry-bags/06.png" alt="Category 1 Image 1">
+                                 <img src="assets/images/images/carry-bags/04.png" alt="Category 1 Image 1">
                                  <div class="overlay">
-                                   <div>Grb unlaminated carry bag</div>
+                                   <div>Printed Multicolor Carry Bag
+                                    </div>
                                  </div>
                                </div>
                              </div>
@@ -597,16 +678,16 @@
                                <div class="image-container">
                                  <img src="assets/images/images/carry-bags/07.png" alt="Category 1 Image 2">
                                  <div class="overlay">
-                                   <div>Transparent carry bag</div>
+                                   <div>Transparent Carry Bag</div>
                                  </div>
                                </div>
                              </div>
    
                              <div class="col-lg-3">
                                <div class="image-container">
-                                 <img src="assets/images/images/carry-bags/08.png" alt="Category 1 Image 2">
+                                 <img src="assets/images/images/carry-bags/10.png" alt="Category 1 Image 2">
                                  <div class="overlay">
-                                   <div>Transparent carry bag</div>
+                                   <div>Blue Transparent Blue Carry Bag</div>
                                  </div>
                                </div>
                              </div>
@@ -627,37 +708,37 @@
 
                             <div class="col-lg-3">
                                 <div class="image-container">
-                                  <img src="assets/images/images/sacks/01.png" alt="Category 1 Image 1">
+                                  <img src="assets/images/images/sacks/04.png" alt="Category 1 Image 1">
                                   <div class="overlay">
-                                    <div>Laminated printed-sack</div>
+                                    <div>Unlaminated Sack</div>
                                   </div>
                                 </div>
                               </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/sacks/02.png" alt="Category 1 Image 1">
+                              <img src="assets/images/images/sacks/11.png" alt="Category 1 Image 1">
                               <div class="overlay">
                                 <div>
-                                    Printed sacks1</div>
+                                  Unlaminated Sack</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/sacks/03.png" alt="Category 1 Image 2">
+                              <img src="assets/images/images/sacks/09.png" alt="Category 1 Image 2">
                               <div class="overlay">
                                 <div>
-                                    Printed sacks2</div>
+                                  White Laminated Sack</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/sacks/04.png" alt="Category 1 Image 2">
+                              <img src="assets/images/images/sacks/08.png" alt="Category 1 Image 2">
                               <div class="overlay">
                                 <div>
-                                    Unlaminated sack</div>
+                                  Blue Laminated Sack</div>
                               </div>
                             </div>
                           </div>
@@ -668,35 +749,40 @@
                        
                         
                         
-                        <div class="row">
+                        <div class="row mt-5">
 
                             <div class="col-lg-3">
                                 <div class="image-container">
-                                  <img src="assets/images/images/sacks/05.png" alt="Category 1 Image 1">
+                                  <img src="assets/images/images/sacks/10.png" alt="Category 1 Image 1">
                                   <div class="overlay">
-                                    <div>Unlaminated sack1</div>
+                                    <div>Yellow Woven Sack</div>
                                   </div>
                                 </div>
                               </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/sacks/06.png" alt="Category 1 Image 1">
+                              <img src="assets/images/images/sacks/02.png" alt="Category 1 Image 1">
                               <div class="overlay">
-                                <div>Gusseted sack1</div>
+                                <div>Printed Sack</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/sacks/07.png" alt="Category 1 Image 1">
+                              <img src="assets/images/images/sacks/03.png" alt="Category 1 Image 1">
                               <div class="overlay">
-                                <div>Gusseted sack2</div>
+                                <div>Printed Multicolor Sack</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="col-lg-3">
-                           
+                            <div class="image-container">
+                              <img src="assets/images/images/sacks/07.png" alt="Category 1 Image 1">
+                              <div class="overlay">
+                                <div>Gusseted Sack</div>
+                              </div>
+                            </div>
                           </div>
 
 
@@ -716,9 +802,9 @@
 
                             <div class="col-lg-3">
                                 <div class="image-container">
-                                  <img src="assets/images/images/leno-bags/1.png" alt="Category 1 Image 1">
+                                  <img src="assets/images/images/leno-bags/3.png" alt="Category 1 Image 1">
                                   <div class="overlay">
-                                    <div>Multicolor leno bag</div>
+                                    <div>Big Leno Bag</div>
                                   </div>
                                 </div>
                               </div>
@@ -726,24 +812,24 @@
                             <div class="image-container">
                               <img src="assets/images/images/leno-bags/2.png" alt="Category 1 Image 1">
                               <div class="overlay">
-                                <div>Big leno bag1</div>
+                                <div>Rolled Leno Bag</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/leno-bags/3.png" alt="Category 1 Image 2">
+                              <img src="assets/images/images/leno-bags/4.png" alt="Category 1 Image 2">
                               <div class="overlay">
-                                <div>Big leno bag2</div>
+                                <div>Leno Bag Bundle</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="col-lg-3">
                             <div class="image-container">
-                              <img src="assets/images/images/leno-bags/4.png" alt="Category 1 Image 2">
+                              <img src="assets/images/images/leno-bags/1.png" alt="Category 1 Image 2">
                               <div class="overlay">
-                                <div>Leno bag1</div>
+                                <div>Multicolor Leno Bag</div>
                               </div>
                             </div>
                           </div>
@@ -814,34 +900,38 @@
             
                                         <div class="col-lg-3">
                                             <div class="image-container">
-                                              <img src="assets/images/images/big-packing-bag/01.png" alt="Category 1 Image 1">
+                                              <img src="assets/images/images/big-packing-bag/04.jpg" alt="Category 1 Image 1">
                                               <div class="overlay">
-                                                <div>Big transparent bag</div>
+                                                <div>Big Unlaminated Packing Bag
+                                                  </div>
                                               </div>
                                             </div>
                                           </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/big-packing-bag/02.png" alt="Category 1 Image 1">
+                                          <img src="assets/images/images/big-packing-bag/05.png" alt="Category 1 Image 1">
                                           <div class="overlay">
-                                            <div>Big gusseted bag</div>
+                                            <div>Big Laminated Packing Bag
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/big-packing-bag/03.png" alt="Category 1 Image 2">
+                                          <img src="assets/images/images/big-packing-bag/01.png" alt="Category 1 Image 2">
                                           <div class="overlay">
-                                            <div>Big gusseted printed bag</div>
+                                            <div>Big Transparent Packing Bag
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
             
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/big-packing-bag/04.jpg" alt="Category 1 Image 2">
+                                          <img src="assets/images/images/big-packing-bag/02.png" alt="Category 1 Image 2">
                                           <div class="overlay">
-                                            <div>Big unlaminated bag
+                                            <div>Big Gusseted Packing Bag
+                                              
                                                 
                                                 </div>
                                           </div>
@@ -855,34 +945,42 @@
             
                                         <div class="col-lg-3">
                                             <div class="image-container">
-                                              <img src="assets/images/images/big-packing-bag/04.png" alt="Category 1 Image 1">
+                                              <img src="assets/images/images/big-packing-bag/3.png" alt="Category 1 Image 1">
                                               <div class="overlay">
                                                 <div>
-                                                    Big laminated bag</div>
+                                                  Big Leno Bag</div>
                                               </div>
                                             </div>
                                           </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/leno-bags/2.png" alt="Category 1 Image 1">
+                                          <img src="assets/images/images/big-packing-bag/03.png" alt="Category 1 Image 1">
                                           <div class="overlay">
                                             <div>
-                                                Big leno bag1</div>
+                                              Big Gusseted Printed Packing Bag
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/leno-bags/3.png" alt="Category 1 Image 2">
+                                          <img src="assets/images/images/big-packing-bag/06.png" alt="Category 1 Image 2">
                                           <div class="overlay">
                                             <div>
-                                                Big leno bag2</div>
+                                              Big Transparent Packing Bag</div>
                                           </div>
                                         </div>
                                       </div>
             
                                       <div class="col-lg-3">
-                                     
+                                        <div class="image-container">
+                                          <img src="assets/images/images/big-packing-bag/07.png" alt="Category 1 Image 2">
+                                          <div class="overlay">
+                                            <div>
+                                              Bundled Big Packing Bag
+                                              </div>
+                                          </div>
+                                        </div>
                                       </div>
             
             
@@ -903,7 +1001,7 @@
                                             <div class="image-container">
                                               <img src="assets/images/images/transparent-bag/01.png" alt="Category 1 Image 1">
                                               <div class="overlay">
-                                                <div>Transparent bag 2 big</div>
+                                                <div>Transparent Bag</div>
                                               </div>
                                             </div>
                                           </div>
@@ -911,7 +1009,8 @@
                                         <div class="image-container">
                                           <img src="assets/images/images/transparent-bag/02.png" alt="Category 1 Image 1">
                                           <div class="overlay">
-                                            <div>Grb transparent carry bag 1</div>
+                                            <div>Transparent White Carry Bag
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
@@ -919,13 +1018,18 @@
                                         <div class="image-container">
                                           <img src="assets/images/images/transparent-bag/03.png" alt="Category 1 Image 2">
                                           <div class="overlay">
-                                            <div>Grb transparent 2</div>
+                                            <div>Thick Transparent Bag</div>
                                           </div>
                                         </div>
                                       </div>
             
                                       <div class="col-lg-3">
-                                       
+                                        <div class="image-container">
+                                          <img src="assets/images/images/carry-bags/10.png" alt="Category 1 Image 2">
+                                          <div class="overlay">
+                                            <div>Blue Transparent Bag</div>
+                                          </div>
+                                        </div>
                                       </div>
             
             
@@ -945,7 +1049,7 @@
                                             <div class="image-container">
                                               <img src="assets/images/images/multicolor/01.png" alt="Category 1 Image 1">
                                               <div class="overlay">
-                                                <div>Multicolor carry bags</div>
+                                                <div>Multicolor Carry Bag</div>
                                               </div>
                                             </div>
                                           </div>
@@ -954,26 +1058,26 @@
                                           <img src="assets/images/images/multicolor/02.png" alt="Category 1 Image 1">
                                           <div class="overlay">
                                             <div>
-                                                Multicolor leno bag</div>
+                                              Multicolor Leno Bag</div>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/multicolor/03.png" alt="Category 1 Image 2">
+                                          <img src="assets/images/images/multicolor/07.png" alt="Category 1 Image 2">
                                           <div class="overlay">
                                             <div>
-                                                Unlaminated multicolor bag1</div>
+                                              Multicolor Leno Bag</div>
                                           </div>
                                         </div>
                                       </div>
             
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                            <img src="assets/images/images/multicolor/04.png" alt="Category 1 Image 2">
+                                            <img src="assets/images/images/multicolor/05.png" alt="Category 1 Image 2">
                                             <div class="overlay">
                                               <div>
-                                                Unlaminated multicolor bag2</div>
+                                                Unlaminated Multicolor Bag</div>
                                             </div>
                                           </div>
                                       </div>
@@ -985,34 +1089,44 @@
             
                                         <div class="col-lg-3">
                                             <div class="image-container">
-                                              <img src="assets/images/images/multicolor/05.png" alt="Category 1 Image 1">
+                                              <img src="assets/images/images/multicolor/04.png" alt="Category 1 Image 1">
                                               <div class="overlay">
                                                 <div>
-                                                    Unlaminated multicolor bag2</div>
+                                                  Big Printed
+                                                  Multicolor Bag
+                                                  </div>
                                               </div>
                                             </div>
                                           </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/multicolor/06.png" alt="Category 1 Image 1">
+                                          <img src="assets/images/images/transparent-bag/05.png" alt="Category 1 Image 1">
                                           <div class="overlay">
                                             <div>
-                                                Laminated multicolor bag</div>
+                                              Gusseted
+                                              Multicolor Bag
+                                              </div>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-lg-3">
                                         <div class="image-container">
-                                          <img src="assets/images/images/multicolor/07.png" alt="Category 1 Image 2">
+                                          <img src="assets/images/images/multicolor/06.png" alt="Category 1 Image 2">
                                           <div class="overlay">
                                             <div>
-                                                Unlaminated multicolor bag2</div>
+                                              Multicolor Laminated Sacks</div>
                                           </div>
                                         </div>
                                       </div>
             
                                       <div class="col-lg-3">
-                                       
+                                        <div class="image-container">
+                                          <img src="assets/images/images/transparent-bag/04.png" alt="Category 1 Image 2">
+                                          <div class="overlay">
+                                            <div>
+                                              Multicolor Big Sacks</div>
+                                          </div>
+                                        </div>
                                       </div>
             
             
